@@ -1,0 +1,57 @@
+# --- Appearance ---
+theme = Catppuccin Frappe
+mouse-hide-while-typing = true
+
+# --- Transparency & Blur ---
+# 0.0 is invisible, 1.0 is fully opaque. 0.85 is the "sweet spot"
+background-opacity = 0.85
+
+# Adds a frosted glass effect so you can still read text over busy wallpapers
+background-blur = true
+
+# --- Extras for the 'Vibe' ---
+# Removes the native titlebar for a cleaner look
+macos-titlebar-style = hidden
+window-padding-x = 10
+window-padding-y = 10
+
+font-family = "MonoLisa"
+font-size = 13
+
+# If you want to use MonoLisa's special features (like ligatures)
+# Ghostty requires the "name=1" or "name=0" syntax
+font-feature = "liga=1"
+font-feature = "calt=1"
+
+# To get that high-end "Script" italic for comments:
+font-style-italic = "Script"
+
+# Options: block, bar, underline
+cursor-style = block_hollow
+# Makes the cursor blink with a smooth fade rather than a harsh flash
+cursor-style-blink = true
+
+adjust-cell-height = 2
+
+# Quick splitting
+keybind = ctrl+d=new_split:right
+keybind = ctrl+shift+d=new_split:down
+
+# Navigation (Vim-style)
+keybind = ctrl+h=goto_split:left
+keybind = ctrl+j=goto_split:bottom
+keybind = ctrl+k=goto_split:top
+keybind = ctrl+l=goto_split:right
+
+# Zoom a pane (great for focusing on long logs)
+keybind = ctrl+f=toggle_split_zoom
+
+# Press Option + Space to toggle Ghostty from anywhere
+keybind = global:opt+space=toggle_quick_terminal
+
+# Customizing the look of the overlay
+quick-terminal-position = top
+quick-terminal-animation-duration = 0.2
+
+# Copies the output of the last command run to your clipboard
+keybind = cmd+shift+c=copy_last_command_output
